@@ -18,7 +18,8 @@ let package = Package(
             name: "WisprFlowSwitch",
             linkerSettings: [
                 .linkedFramework("AppKit"),
-                .linkedFramework("ApplicationServices")
+                .linkedFramework("ApplicationServices"),
+                .linkedFramework("AVFoundation")
             ]
         )
     ]

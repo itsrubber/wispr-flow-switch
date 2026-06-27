@@ -20,5 +20,7 @@
 	<true/>
 	<key>NSHumanReadableCopyright</key>
 	<string>Copyright © 2026</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>Wispr Flow Switch records microphone audio while API mode is on so it can stream dictation audio to Wispr Flow.</string>
 </dict>
 </plist>
