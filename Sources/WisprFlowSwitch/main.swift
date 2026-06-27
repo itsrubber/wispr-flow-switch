@@ -159,7 +159,7 @@ private final class AppDelegate: NSObject, NSApplicationDelegate {
             return
         }
 
-        let options = [kAXTrustedCheckOptionPrompt as String: true] as CFDictionary
+        let options = [kAXTrustedCheckOptionPrompt.takeUnretainedValue() as String: true] as CFDictionary
         _ = AXIsProcessTrustedWithOptions(options)
     }
 
@@ -214,6 +214,6 @@ private final class AppDelegate: NSObject, NSApplicationDelegate {
 }
 
 let app = NSApplication.shared
-let delegate = AppDelegate()
+private let delegate = AppDelegate()
 app.delegate = delegate
 app.run()
